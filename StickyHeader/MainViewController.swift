@@ -8,7 +8,7 @@
 import UIKit
 
 let maxHeight: CGFloat = 350
-let minHeight: CGFloat = 150
+let minHeight: CGFloat = 100
 var savedOffset: CGFloat?
 
 class MainViewController: UIViewController {
@@ -112,7 +112,7 @@ class MainViewController: UIViewController {
         } else {
             heightConstraint.constant = minHeight
         }
-        let percentage = (-offset-150)/50
+        let percentage = (-offset-100)/50
         
         upperHeaderView.alpha = percentage
     }
